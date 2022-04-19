@@ -6,20 +6,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { PagesSinglePage } from '../pages/pages-single/pages-single';
+
 import { TabsPage } from '../pages/tabs/tabs';
 import { SettingsPage } from '../pages/settings/settings';
-import { AppareilPage } from '../pages/appareil/appareil';
+import { AppareilPage } from '../pages/single-appareil/appareil';
+import { OptionsPage } from '../pages/options/options';
 import { AppareilsService } from '../Services/appareil.service';
+import { AppareilFormPage } from '../pages/appareil-form/appareil-form';
+import { AuthService } from '../Services/auth.service';
+import { AuthPage } from '../pages/auth/auth';
+import { AppareilsPage } from '../pages/appareils/appareils';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    PagesSinglePage,
+    AppareilsPage,
     TabsPage,
     SettingsPage,
-    AppareilPage
+    AppareilPage,
+    OptionsPage,
+    AppareilFormPage,
+    AuthPage
+    
   ],
   imports: [
     BrowserModule,
@@ -29,15 +38,19 @@ import { AppareilsService } from '../Services/appareil.service';
   entryComponents: [
     MyApp,
     HomePage,
-    PagesSinglePage,
+    AppareilsPage,
     SettingsPage,
     TabsPage,
-    AppareilPage
+    AppareilPage,
+    OptionsPage,
+    AppareilFormPage,
+    AuthPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     AppareilsService,
+    AuthService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

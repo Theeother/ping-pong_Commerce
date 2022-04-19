@@ -1,0 +1,14 @@
+page-appareils {
+    ion-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ion-item{
+    display: flex;
+    width: 250px;
+    box-shadow: 12px 12px 2px 1px rgba(56, 56, 56, 0.08);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { PagesSinglePage } from '../pages-single/pages-single';
+import { AppareilsPage } from '../appareils/appareils';
+import { AuthPage } from '../auth/auth';
 import { SettingsPage } from '../settings/settings';
 
 @Component({
@@ -8,8 +9,9 @@ import { SettingsPage } from '../settings/settings';
   templateUrl: 'tabs.html',
 })
 export class TabsPage {
-  single = PagesSinglePage;
+  single = AppareilsPage;
   settings = SettingsPage;
+  connexion = AuthPage;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

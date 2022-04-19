@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { PagesSinglePage } from '../pages-single/pages-single';
+import { AppareilsPage } from '../appareils/appareils';
+
+
+
 
 @Component({
   selector: 'page-home',
@@ -12,7 +15,7 @@ export class HomePage {
 
   }
   navigate(){
-    this.navCtrl.push(PagesSinglePage)
+    this.navCtrl.push(AppareilsPage)
   }
 
 }
