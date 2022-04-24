@@ -21,7 +21,7 @@
             full
             color="danger"
             [disabled]="!appareil.isOn"
-            (click)="onToggleAppareil()">Eteindre
+            (click)="onToggleAppareil()">Non disponible
           </button>
         </ion-col>
         <ion-col>
@@ -30,12 +30,12 @@
             full
             color="secondary"
             [disabled]="appareil.isOn"
-            (click)="onToggleAppareil()">Allumer
+            (click)="onToggleAppareil()">Disponible
           </button>
         </ion-col>
       </ion-row>
     </ion-grid>
-    <form #f="ngForm" (ngSubmit)="onSubmitForm(f)">
+    <!--form #f="ngForm" (ngSubmit)="onSubmitForm(f)">
       <ion-list>
       <ion-item>
       <ion-label>Heure d'allumage</ion-label>
@@ -53,6 +53,6 @@
       <button type="submit" ion-button full color="secondary">
       Enregistrer horaires
       </button>
-      </form>
+      </form-->
   </ion-card>
 </ion-content>

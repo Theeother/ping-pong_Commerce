@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-  <ion-title>Nouvel appareil</ion-title>
+  <ion-title>Nouvel produit</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
@@ -9,7 +9,10 @@
       <ion-item-divider>Informations</ion-item-divider>
         <ion-item>
           <ion-label>Nom</ion-label>
-          <ion-input placeholder="Appareil" formControlName="name"></ion-input>
+          <ion-input placeholder="Produit" formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="file" placeholder="url" [id]="pic"></ion-input>
         </ion-item>
       <ion-item-divider>Description</ion-item-divider>
       <div formArrayName="description">
